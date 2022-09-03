@@ -1,0 +1,4 @@
+<launch>
+    <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
+    <node name="motion" pkg="ros_course" type="turtlesim_motion" args="10 1" output="screen" />
+</launch>
