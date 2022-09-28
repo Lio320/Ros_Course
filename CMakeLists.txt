@@ -176,6 +176,9 @@ catkin_install_python(PROGRAMS
   src/Assignment1/turtlesim_pose.py
   src/Assignment1/add_server.py
   src/Assignment1/add_client.py
+  src/Assignment3/tennis_ball_publisher.py
+  src/Assignment3/tennis_ball_listener.py
+  src/Assignment3/tennis_ball_usb_cam_tracker.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
