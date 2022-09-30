@@ -50,8 +50,8 @@ def image_callback(msg):
     try:
         bridge = CvBridge()
         img = bridge.imgmsg_to_cv2(msg, "bgr8")
-        yellowLower =(30, 150, 100)
-        yellowUpper = (50, 255, 255)
+        yellowLower =(100, 100, 50)
+        yellowUpper = (255, 230, 190)
         binary_image_mask = filter_color(img, yellowLower, yellowUpper)
         contours = getContours(binary_image_mask)
         rgb_image, black_image = draw_ball_contour(binary_image_mask, img,contours)
